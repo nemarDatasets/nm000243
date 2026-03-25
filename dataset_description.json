@@ -1,0 +1,53 @@
+{
+	"Name": "BNCI 2016-002 Emergency Braking during Simulated Driving dataset",
+	"BIDSVersion": "1.9.0",
+	"HEDVersion": "8.4.0",
+	"DatasetType": "derivative",
+	"License": "CC-BY-NC-ND-4.0",
+	"Authors": [
+		"Stefan Haufe",
+		"Matthias S Treder",
+		"Manfred F Gugler",
+		"Max Sagebaum",
+		"Gabriel Curio",
+		"Benjamin Blankertz"
+	],
+	"Funding": [
+		"DFG grant",
+		"BMBF grant",
+		"Bernstein Focus Neurotechnology, Berlin"
+	],
+	"EthicsApprovals": [
+		"IRB of Charit\u00e9 University Medicine, Berlin",
+		"Declaration of Helsinki",
+		"Written informed consent from all participants"
+	],
+	"ReferencesAndLinks": [
+		"10.1088/1741-2560/8/5/056001"
+	],
+	"GeneratedBy": [
+		{
+			"CodeURL": "https://github.com/NeuroTechX/moabb",
+			"Name": "moabb",
+			"Description": "Mother of All BCI Benchmarks",
+			"Version": "1.5.0"
+		}
+	],
+	"SourceDatasets": [
+		{
+			"DOI": "10.1088/1741-2560/8/5/056001"
+		}
+	],
+	"Keywords": [
+		"emergency braking",
+		"driving simulation",
+		"EEG",
+		"EMG",
+		"brain-computer interface",
+		"neuroergonomics",
+		"event-related potentials",
+		"machine learning",
+		"driver assistance"
+	],
+	"PublicationYear": 2011
+}

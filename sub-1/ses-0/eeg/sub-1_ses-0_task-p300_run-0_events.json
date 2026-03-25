@@ -1,0 +1,31 @@
+{
+	"onset": {
+		"Description": "Onset (in seconds) of the event from the beginning of the first datapoint. Negative onsets account for events before the first stored data point.",
+		"Units": "s"
+	},
+	"duration": {
+		"Description": "Duration of the event in seconds from onset. Must be zero, positive, or 'n/a' if unavailable. A zero value indicates an impulse event. ",
+		"Units": "s"
+	},
+	"sample": {
+		"Description": "The event onset time in number of sampling points.First sample is 0."
+	},
+	"value": {
+		"Description": "The event code (also known as trigger code or event ID) associated with the event."
+	},
+	"trial_type": {
+		"Description": "The type, category, or name of the event.",
+		"HED": {
+			"Target": "Sensory-event, Experimental-stimulus, Visual-presentation, Target",
+			"NonTarget": "Sensory-event, Experimental-stimulus, Visual-presentation, Non-target"
+		}
+	},
+	"Description": "Event annotations for p300 task (NonTarget, Target).",
+	"StimulusPresentation": {
+		"isi_range": "20-40 seconds",
+		"deceleration_range": "60-80 km/h",
+		"brakelight": "flashing",
+		"oncoming_traffic": "present",
+		"sharp_curves": "present"
+	}
+}

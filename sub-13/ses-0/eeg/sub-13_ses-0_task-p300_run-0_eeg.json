@@ -1,0 +1,48 @@
+{
+	"TaskName": "p300",
+	"Manufacturer": "Brain Products",
+	"PowerLineFrequency": 50.0,
+	"SamplingFrequency": 200.0,
+	"SoftwareFilters": {
+		"preprocessing_steps": {
+			"Description": "lowpass filtering, bandpass filtering, notch filtering, rectification, downsampling/upsampling, baseline correction, synchronization"
+		}
+	},
+	"RecordingDuration": 8098.995,
+	"RecordingType": "continuous",
+	"EEGReference": "nose",
+	"EEGGround": "n/a",
+	"EEGPlacementScheme": "extended 10-20",
+	"EEGChannelCount": 59,
+	"EOGChannelCount": 0,
+	"ECGChannelCount": 0,
+	"EMGChannelCount": 0,
+	"TriggerChannelCount": 0,
+	"ManufacturersModelName": "BrainAmp",
+	"SoftwareVersions": "TORCS",
+	"CapManufacturer": "Easycap",
+	"CapManufacturersModelName": "Easycap",
+	"HardwareFilters": {
+		"Bandpass": {
+			"LowCutoffFrequency": 15.0,
+			"HighCutoffFrequency": 90.0,
+			"Type": "Chebychev type II (EEG lowpass), Elliptic (EMG bandpass), digital (notch)",
+			"Order": "tenth-order (EEG), sixth-order (EMG), second-order (notch)"
+		},
+		"Notch": {
+			"CutoffFrequency": [
+				50.0
+			]
+		}
+	},
+	"TaskDescription": "[driving_simulation] Participants drove a virtual racing car using steering wheel and gas/brake pedals, tightly following a computer-controlled lead vehicle at 100 km/h. The lead vehicle occasionally decelerated abruptly (20-40s inter-stimulus-interval) to 60-80 km/h, requiring immediate emergency braking. Three blocks of 45 min each with 10-15 min rest between blocks. Trial duration: 3.0s.",
+	"Instructions": "Drive a virtual racing car using steering wheel and gas/brake pedals, tightly follow the lead vehicle within 20m at 100 km/h. Perform immediate emergency braking when the lead vehicle decelerates abruptly to avoid a crash.",
+	"CogAtlasID": "https://www.cognitiveatlas.org/task/id/tsk_GxjZBNiJorj1K/",
+	"InstitutionName": "Berlin Institute of Technology",
+	"InstitutionAddress": "Franklinstra\u00dfe 28/29, D-10587 Berlin, Germany",
+	"InstitutionalDepartmentName": "Machine Learning Group, Department of Computer Science",
+	"SubjectArtefactDescription": "Impedance kept below eeg: 20 kOhm, emg: 50 kOhm",
+	"DeviceSerialNumber": "n/a",
+	"Description": "Emergency braking detection during simulated driving using EEG and EMG to predict driver's braking intention before behavioral response.",
+	"MISCChannelCount": 0
+}

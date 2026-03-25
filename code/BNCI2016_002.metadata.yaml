@@ -1,0 +1,275 @@
+_dataset:
+  class: BNCI2016_002
+  code: BNCI2016-002
+  doi: 10.1088/1741-2560/8/5/056001
+  interval:
+  - -0.5
+  - 1.0
+  n_subjects: 15
+  paradigm: p300
+acquisition:
+  auxiliary_channels:
+    emg_channels: 1
+    eog_channels: 2
+    eog_type:
+    - vertical
+    - horizontal
+    has_emg: true
+    has_eog: true
+    other_physiological:
+    - technical_markers
+  cap_manufacturer: Easycap
+  cap_model: Easycap
+  channel_types:
+    eeg: 59
+    emg: 1
+    eog: 2
+    misc: 7
+  filters:
+    highpass_hz: 0.1
+    lowpass_hz: 250
+  hardware: BrainAmp
+  impedance_threshold_kohm:
+    eeg: 20
+    emg: 50
+  line_freq: 50.0
+  montage: extended 10-20
+  n_channels: 59
+  reference: nose
+  sampling_rate: 200.0
+  sensor_type: Ag/AgCl
+  sensors:
+  - AF3
+  - AF4
+  - C1
+  - C2
+  - C3
+  - C4
+  - C5
+  - C6
+  - CP1
+  - CP2
+  - CP3
+  - CP4
+  - CP5
+  - CP6
+  - CPz
+  - Cz
+  - EMGf
+  - EOGh
+  - EOGv
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - FC1
+  - FC2
+  - FC3
+  - FC4
+  - FC5
+  - FC6
+  - FCz
+  - FT7
+  - FT8
+  - Fp1
+  - Fp2
+  - Fz
+  - O1
+  - O2
+  - Oz
+  - P1
+  - P10
+  - P2
+  - P3
+  - P4
+  - P5
+  - P6
+  - P7
+  - P8
+  - P9
+  - PO3
+  - PO4
+  - PO7
+  - PO8
+  - POz
+  - Pz
+  - T7
+  - T8
+  - TP7
+  - TP8
+  - brake
+  - dist_to_lead
+  - gas
+  - lead_brake
+  - lead_gas
+  - wheel_X
+  - wheel_Y
+  software: TORCS
+bci_application:
+  applications:
+  - driving_assistance
+  - emergency_braking_detection
+  - neuroergonomics
+  environment: laboratory
+  online_feedback: true
+contributing_labs:
+- Machine Learning Group, Berlin Institute of Technology
+- Bernstein Focus Neurotechnology, Berlin
+- Neurophysics Group, Charité University Medicine Berlin
+- Intelligent Data Analysis Group, Fraunhofer Institute FIRST
+cross_validation:
+  cv_method: sequential temporal split
+  evaluation_type:
+  - temporal_validation
+data_processed: true
+data_structure:
+  block_duration_s: 2700.0
+  n_blocks: 3
+  n_trials: ~99 emergency braking events per subject (test set)
+  trials_context: Emergency braking events with 20-40s inter-stimulus-interval, total ~225 events across 3 blocks per subject
+documentation:
+  associated_paper_doi: 10.1088/1741-2560/8/5/056001
+  contact_info:
+  - stefan.haufe@tu-berlin.de
+  country: Germany
+  description: Emergency braking detection during simulated driving using EEG and EMG to predict driver's braking intention
+    before behavioral response.
+  doi: 10.1088/1741-2560/8/5/056001
+  ethics_approval:
+  - IRB of Charité University Medicine, Berlin
+  - Declaration of Helsinki
+  - Written informed consent from all participants
+  funding:
+  - DFG grant
+  - BMBF grant
+  - Bernstein Focus Neurotechnology, Berlin
+  institution: Berlin Institute of Technology
+  institution_address: Franklinstraße 28/29, D-10587 Berlin, Germany
+  institution_department: Machine Learning Group, Department of Computer Science
+  investigators:
+  - Stefan Haufe
+  - Matthias S Treder
+  - Manfred F Gugler
+  - Max Sagebaum
+  - Gabriel Curio
+  - Benjamin Blankertz
+  keywords:
+  - emergency braking
+  - driving simulation
+  - EEG
+  - EMG
+  - brain-computer interface
+  - neuroergonomics
+  - event-related potentials
+  - machine learning
+  - driver assistance
+  license: CC-BY-NC-ND-4.0
+  publication_year: 2011
+  repository: BNCI Horizon
+  senior_author: Benjamin Blankertz
+experiment:
+  class_labels:
+  - Target
+  - NonTarget
+  events:
+    car_accelerate: 4
+    car_brake: 1
+    car_collision: 5
+    car_hold: 2
+    react_emg: 3
+  feedback_type: 'visual (colored circle indicating distance: green <20m, yellow otherwise; brakelight flashing)'
+  has_training_test_split: true
+  instructions: Drive a virtual racing car using steering wheel and gas/brake pedals, tightly follow the lead vehicle within
+    20m at 100 km/h. Perform immediate emergency braking when the lead vehicle decelerates abruptly to avoid a crash.
+  mode: online
+  n_classes: 2
+  paradigm: p300
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  - multisensory
+  stimulus_presentation:
+    brakelight: flashing
+    deceleration_range: 60-80 km/h
+    isi_range: 20-40 seconds
+    oncoming_traffic: present
+    sharp_curves: present
+  stimulus_type: emergency_braking_scenario
+  study_design: Participants drove a virtual racing car using steering wheel and gas/brake pedals, tightly following a computer-controlled
+    lead vehicle at 100 km/h. The lead vehicle occasionally decelerated abruptly (20-40s inter-stimulus-interval) to 60-80
+    km/h, requiring immediate emergency braking. Three blocks of 45 min each with 10-15 min rest between blocks.
+  synchronicity: asynchronous
+  task_type: driving_simulation
+  trial_duration: 3.0
+file_format: .mat
+n_contributing_labs: 4
+paradigm_specific:
+  detected_paradigm: p300
+participants:
+  age_mean: 30.6
+  age_std: 5.4
+  bci_experience: naive
+  gender:
+    female: 4
+    male: 14
+  handedness: right-handed
+  health_status: healthy
+  n_subjects: 15
+  species: human
+performance:
+  auc: 0.5
+  braking_distance_reduction_m: 3.66
+  braking_time_reduction_ms: 130
+preprocessing:
+  bandpass:
+  - 15.0
+  - 90.0
+  data_state: preprocessed
+  downsampled_to_hz: 200.0
+  epoch_window:
+  - -0.3
+  - 1.2
+  filter_order: tenth-order (EEG), sixth-order (EMG), second-order (notch)
+  filter_type: Chebychev type II (EEG lowpass), Elliptic (EMG bandpass), digital (notch)
+  highpass_hz: 0.1
+  lowpass_hz: 45.0
+  notch_hz: 50.0
+  notes: EEG lowpass filtered at 45 Hz (causal). EMG bandpass filtered 15-90 Hz with 50 Hz notch and rectified. All signals
+    synchronized and resampled to 200 Hz. Baseline correction using first 100 ms.
+  preprocessing_applied: true
+  preprocessing_steps:
+  - lowpass filtering
+  - bandpass filtering
+  - notch filtering
+  - rectification
+  - downsampling/upsampling
+  - baseline correction
+  - synchronization
+  re_reference: nose
+runs_per_session: 1
+sessions_per_subject: 1
+signal_processing:
+  classifiers:
+  - RLDA
+  - Regularized Linear Discriminant Analysis
+  - Shrinkage LDA
+  feature_extraction:
+  - Event-Related Potentials
+  - Spatio-temporal features
+  - Bi-serial correlation
+  - Area Under Curve
+  spatial_filters:
+  - Artifact rejection based on spectral power
+tags:
+  modality:
+  - Visual
+  - Multisensory
+  pathology:
+  - Healthy
+  type:
+  - Driving
+  - Neuroergonomics
