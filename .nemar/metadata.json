@@ -1,0 +1,105 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Stefan Haufe": {},
+    "Matthias S Treder": {},
+    "Manfred F Gugler": {},
+    "Max Sagebaum": {},
+    "Gabriel Curio": {},
+    "Benjamin Blankertz": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.1088/1741-2560/8/5/056001",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000243",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000243",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "DFG grant"
+    },
+    {
+      "funder_name": "BMBF grant"
+    },
+    {
+      "funder_name": "Bernstein Focus Neurotechnology, Berlin"
+    },
+    {
+      "funder_name": "DFG"
+    },
+    {
+      "funder_name": "BMBF"
+    }
+  ],
+  "title": "BNCI 2016-002 Emergency Braking during Simulated Driving dataset",
+  "license": "CC-BY-NC-ND-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "4.3 GB (16 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "This dataset comprises EEG and EMG recordings from 15 healthy participants performing emergency braking tasks during simulated driving at 200 Hz sampling rate. Participants drove a virtual racing car and performed immediate emergency braking when a lead vehicle decelerated abruptly, with the goal of detecting braking intention from neural and muscular signals. The preprocessed data includes 59 EEG channels, 1 EMG channel, 2 EOG channels, and 7 miscellaneous technical channels (69 total channels), including vehicle dynamics measurements (brake, distance to lead vehicle, gas, lead vehicle brake, lead vehicle gas, wheel X/Y), enabling research on predictive braking assistance systems and neuroergonomic applications.",
+  "methods_description": "Data were acquired using a BrainAmp system with 59 EEG channels (extended 10-20 montage, Ag/AgCl sensors, nose reference), 1 EMG channel, 2 EOG channels, and 7 miscellaneous technical channels at 200 Hz sampling rate. Participants performed three 45-minute blocks of simulated driving with 10-15 minute rest intervals. Emergency braking events were triggered by lead vehicle deceleration (20-40s inter-stimulus-interval) requiring immediate response. Preprocessing included highpass filtering (0.1 Hz), lowpass filtering (45 Hz for EEG), bandpass filtering (15-90 Hz for EMG), 50 Hz notch filtering, EMG rectification, baseline correction, and synchronization across all signals.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "emergency braking"
+    },
+    {
+      "term": "driving simulation"
+    },
+    {
+      "term": "Event-Related Potentials, P300",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "neuroergonomics"
+    },
+    {
+      "term": "EMG"
+    },
+    {
+      "term": "machine learning"
+    },
+    {
+      "term": "driver assistance"
+    }
+  ],
+  "source_hash": "3a7ce941596944d33f981afdaf0175999c8d738ab76893c07160791c6a2e2d81"
+}
