@@ -1,0 +1,90 @@
+{
+ "dataset": "nm000243",
+ "moabb_class": "BNCI2016_002",
+ "moabb_version_used": "1.5.0",
+ "retrieved": "2026-08-11",
+ "retrieved_by": "moabb.datasets.BNCI2016_002.data_path()",
+ "upstream_cache_root": "/expanse/lustre/scratch/bpinto/temp_project/sourcedata_staging/mne_data/MNE-bnci-data/bbci/BNCIHorizon2020-EmergencyBraking",
+ "license": "CC-BY-NC-ND-4.0",
+ "doi": "10.1088/1741-2560/8/5/056001",
+ "naming": "upstream_filenames_restored",
+ "n_files": 15,
+ "total_bytes": 10963677938,
+ "files": [
+  {
+   "file": "VPae.mat",
+   "bytes": 746097517,
+   "sha256": "8a578415f326084860463ad18ede631052b414b7621d796b08e757995f6b7f40"
+  },
+  {
+   "file": "VPbad.mat",
+   "bytes": 757536757,
+   "sha256": "9058ea8c1f93cf40ff3da14de738ab2437c4027efd97f39e39d2236166788d15"
+  },
+  {
+   "file": "VPbba.mat",
+   "bytes": 718524804,
+   "sha256": "0810f1a7bb5f3b6181d5221d8297cb318a9d3a4eea26e5b6c675f91273785907"
+  },
+  {
+   "file": "VPdx.mat",
+   "bytes": 676769402,
+   "sha256": "e5c2469a3619bd82df91279a42a491d4ecb082a44102e181fad95e1feb82c17c"
+  },
+  {
+   "file": "VPgaa.mat",
+   "bytes": 753480724,
+   "sha256": "035a5420c09bb6189218e4c3910a88b87efa99d30a9b1bf90e43db6a269cc888"
+  },
+  {
+   "file": "VPgab.mat",
+   "bytes": 755030475,
+   "sha256": "4d4f114c7cfb8aa5d87ba81bb64be5736fb395875616a3f5b63f03ad2ea12b48"
+  },
+  {
+   "file": "VPgac.mat",
+   "bytes": 762512658,
+   "sha256": "1407dbf037c92cdbd7908037d86afa3f5dd70cc93ae28be92aa753ef2bbbc86b"
+  },
+  {
+   "file": "VPgae.mat",
+   "bytes": 673610323,
+   "sha256": "991eb13bebcf5178b2e741519d39e2c58cc3de191514c381d1e9861b0677c130"
+  },
+  {
+   "file": "VPgag.mat",
+   "bytes": 750800334,
+   "sha256": "61b16e70c5c122b63d083e8c6fdc2f2021ac0eef9625b358ffbc2cc44b4dc960"
+  },
+  {
+   "file": "VPgah.mat",
+   "bytes": 726309270,
+   "sha256": "e7618ccaacf9667bcec97b19adbcf07ed09f080fd637e93cd068b4cdee54e06e"
+  },
+  {
+   "file": "VPgal.mat",
+   "bytes": 720940947,
+   "sha256": "a06bd4f5c883b6a040a46f3497f0122a9fdee3cb60f8b8d3143f9ddd986bc433"
+  },
+  {
+   "file": "VPgam.mat",
+   "bytes": 734933583,
+   "sha256": "71956cf4e2fab0e85d6bd3f61aae126bbd66df039719aa5343c6183e8e859f60"
+  },
+  {
+   "file": "VPih.mat",
+   "bytes": 746236590,
+   "sha256": "a5da6f83432c1937c4d27e2f395fb412b546be8ae85bc00ec6ff90869cc65925"
+  },
+  {
+   "file": "VPii.mat",
+   "bytes": 752630066,
+   "sha256": "98114a5be397de7f7c3442cb148f1190d9efffda5b628267b8e7173fe3c1e0cc"
+  },
+  {
+   "file": "VPja.mat",
+   "bytes": 688264488,
+   "sha256": "fc5b4b60aaeb0e62c148f56848b3ceec6a0f690f6e4c830ff4c5ad964488e97d"
+  }
+ ]
+}
