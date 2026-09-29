@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2016-002 Emergency Braking during Simulated Driving dataset",
-  "description": "This dataset comprises EEG and EMG recordings from 15 healthy participants performing emergency braking tasks during simulated driving at 200 Hz sampling rate. Participants drove a virtual racing car following a lead vehicle, with occasional abrupt decelerations requiring immediate emergency braking responses. The study demonstrates the feasibility of predicting driver braking intentions from neural and muscular signals before behavioral response, with applications to neuroergonomics and driving assistance systems.",
-  "methods_description": "Data were acquired using a 59-channel EEG system (extended 10-20 montage, Ag/AgCl electrodes, BrainAmp hardware) plus EMG, EOG, and vehicle dynamics channels at 200 Hz. Participants completed three 45-minute driving blocks with 10-15 minute rest intervals in a TORCS driving simulator. Online filters applied: 0.1 Hz highpass, 250 Hz lowpass. Preprocessing included lowpass filtering at 45 Hz (EEG), bandpass filtering 15-90 Hz with 50 Hz notch (EMG), rectification, baseline correction, and resampling to 200 Hz. Epochs were extracted from -0.3 to 1.2 seconds relative to emergency braking events.",
+  "description": "EEG, EMG and vehicle-dynamics recordings from 15 healthy participants who drove a simulated racing car while following a lead vehicle that occasionally braked abruptly, requiring emergency braking. The dataset supports research on detecting a driver's braking intention from brain activity before the behavioral response, using event-related potentials and machine learning for driver assistance and neuroergonomics. It is a preprocessed BIDS conversion distributed through the BNCI Horizon archive.",
+  "methods_description": "Participants drove a virtual car (TORCS) with a steering wheel and gas/brake pedals at 100 km/h, following a computer-controlled lead vehicle that decelerated abruptly at 20-40 s intervals. Three 45-minute blocks were recorded with a BrainAmp amplifier (59 EEG channels, plus EMG and EOG, nose reference). Signals were lowpass filtered at 45 Hz, synchronized and resampled to 200 Hz.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -22,22 +22,19 @@
       "term": "EMG"
     },
     {
-      "term": "Event-Related Potentials, P300",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
-    },
-    {
-      "term": "brain-computer interface"
+      "term": "emergency braking"
     },
     {
       "term": "driving simulation"
     },
     {
+      "term": "brain-computer interface"
+    },
+    {
       "term": "neuroergonomics"
     },
     {
-      "term": "emergency braking detection"
+      "term": "event-related potentials"
     }
   ],
   "related_identifiers": [
@@ -60,6 +57,11 @@
       "identifier": "https://nemar.org/dataset/nm000243",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
   "funding_references": [
@@ -85,7 +87,7 @@
     "eeg"
   ],
   "sizes": [
-    "15.3 GB (31 files)"
+    "14.22 GB (31 files)"
   ],
   "formats": [
     ".bdf",
