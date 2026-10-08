@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2016-002 Emergency Braking during Simulated Driving dataset",
-  "description": "EEG, EMG and vehicle-dynamics recordings from 15 healthy participants who drove a simulated racing car while following a lead vehicle that occasionally braked abruptly, requiring emergency braking. The dataset supports research on detecting a driver's braking intention from brain activity before the behavioral response, using event-related potentials and machine learning for driver assistance and neuroergonomics. It is a preprocessed BIDS conversion distributed through the BNCI Horizon archive.",
-  "methods_description": "Participants drove a virtual car (TORCS) with a steering wheel and gas/brake pedals at 100 km/h, following a computer-controlled lead vehicle that decelerated abruptly at 20-40 s intervals. Three 45-minute blocks were recorded with a BrainAmp amplifier (59 EEG channels, plus EMG and EOG, nose reference). Signals were lowpass filtered at 45 Hz, synchronized and resampled to 200 Hz.",
+  "description": "EEG, EMG and vehicle-dynamics recordings from 15 healthy participants who drove a simulated racing car while closely following a lead vehicle that occasionally braked abruptly. The dataset supports detection of emergency braking intention from brain activity before the behavioral response, using an ERP-based (P300-like) target/non-target paradigm. It is a preprocessed BIDS derivative of the BNCI Horizon 2016-002 dataset, intended for research on driver assistance and neuroergonomics.",
+  "methods_description": "Participants drove a virtual racing car (TORCS) with a steering wheel and gas/brake pedals, following a lead vehicle at 100 km/h. The lead vehicle decelerated abruptly every 20-40 s, requiring emergency braking. Three 45-minute blocks were recorded with a BrainAmp amplifier (59 EEG channels, plus EMG, EOG and vehicle signals). Signals were filtered, synchronized and resampled to 200 Hz.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -98,5 +98,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "30249579d64b97fd7530b22840b654801b48e54f76dca316e38e85a52de877cd"
+  "source_hash": "e17970361aafd482fce05efffcc3778c1845641f504ff5a25e4567bde83dc523"
 }
